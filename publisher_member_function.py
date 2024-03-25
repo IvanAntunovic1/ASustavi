@@ -30,7 +30,7 @@ class MinimalPublisher(Node):
         msg = Int32()
         msg.data = self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('Poslani broj: "%d"' % msg.data)	# za trooubleshootanje je trebalo
+        self.get_logger().info('Poslani broj: "%d"' % msg.data)	
         self.i += 1
 
 
